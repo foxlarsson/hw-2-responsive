@@ -21,12 +21,6 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    /*
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    */
     display: flex;
     flex-wrap: wrap;
     width: 78vw;
