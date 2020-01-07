@@ -1,0 +1,124 @@
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: url(images/weather_widget_bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#weather_widget {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    */
+    display: flex;
+    flex-wrap: wrap;
+    width: 78vw;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.weather_widget__item {
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+    min-height: 240px;
+    min-width: 240px;
+}
+
+@media only screen and (max-width: 420px) {
+
+    #weather_widget {
+        margin: 0 20px;
+        height: 1700px;
+    }
+
+    .weather_widget__item {
+        width: 78vw;
+        height: 78vw;
+    }
+}
+
+.weather_widget__item__icon {
+    display: block;
+    width: 63%;
+    margin: 35% auto 20% auto;
+}
+
+#weather_widget__item__chicago {
+    background-color: #06b3db;
+}
+
+#weather_widget__item__seattle {
+    background-color: #4ed486;
+}
+
+#weather_widget__item__brooklyn {
+    background-color: #6139f6;
+}
+
+#weather_widget__item__portland {
+    background-color: #e3b63d;
+}
+
+#weather_widget__item__current {
+    background-color: #dc3d66;
+}
+
+#weather_widget__item__san_jose {
+    background-color: #bd54cd;
+}
+
+#weather_widget__item__current__icon {
+    height: 53%;
+    position: relative;
+}
+
+#weather_widget__item__current__icon img {
+    width: 30%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#weather_widget__item__current__weather {
+    display: flex;
+    justify-content: center;
+    background-color: #b53355;
+    height: 47%;
+}
+
+#weather_widget__item__current__weather figure {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 0.8rem;
+}
+
+#weather_widget__item__current__weather img {
+    width: 25px;
+    height: auto;
+    padding-bottom: 15px;
+}
